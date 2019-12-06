@@ -7,71 +7,71 @@ $link = 'http://www.bloomberght.com';
 $html = file_get_html($link.'/doviz');
 
 
-$usdBuying = $html->find('div.table-responsive table tbody tr td',7);
-$usdSelling = $html->find('div.table-responsive table tbody tr td',8);
-$usdChange = $html->find('div.table-responsive table tbody tr td',9);
+$usdBuying = $html->find('div.table-responsive table tbody tr td',6);
+$usdSelling = $html->find('div.table-responsive table tbody tr td',7);
+$usdChange = $html->find('div.table-responsive table tbody tr td',8);
 $usdChange = str_replace(',', '.', $usdChange->innertext);
-$usdTime = $html->find('div.table-responsive table tbody tr td',10);
+$usdTime = $html->find('div.table-responsive table tbody tr td',9);
 
-$eurBuying = $html->find('div.table-responsive table tbody tr td',12);
-$eurSelling = $html->find('div.table-responsive table tbody tr td',13);
-$eurChange = $html->find('div.table-responsive table tbody tr td',14);
+$eurBuying = $html->find('div.table-responsive table tbody tr td',11);
+$eurSelling = $html->find('div.table-responsive table tbody tr td',12);
+$eurChange = $html->find('div.table-responsive table tbody tr td',13);
 $eurChange = str_replace(',', '.', $eurChange->innertext);
-$eurTime = $html->find('div.table-responsive table tbody tr td',15);
+$eurTime = $html->find('div.table-responsive table tbody tr td',14);
 
-$gbpBuying = $html->find('div.table-responsive table tbody tr td',17);
-$gbpSelling = $html->find('div.table-responsive table tbody tr td',18);
-$gbpChange = $html->find('div.table-responsive table tbody tr td',19);
+$gbpBuying = $html->find('div.table-responsive table tbody tr td',16);
+$gbpSelling = $html->find('div.table-responsive table tbody tr td',17);
+$gbpChange = $html->find('div.table-responsive table tbody tr td',18);
 $gbpChange = str_replace(',', '.', $gbpChange->innertext);
-$gbpTime = $html->find('div.table-responsive table tbody tr td',20);
+$gbpTime = $html->find('div.table-responsive table tbody tr td',19);
 
-$sekBuying = $html->find('div.table-responsive table tbody tr td',57);
-$sekSelling = $html->find('div.table-responsive table tbody tr td',58);
-$sekChange = $html->find('div.table-responsive table tbody tr td',59);
+$sekBuying = $html->find('div.table-responsive table tbody tr td',56);
+$sekSelling = $html->find('div.table-responsive table tbody tr td',57);
+$sekChange = $html->find('div.table-responsive table tbody tr td',58);
 $sekChange = str_replace(',', '.', $sekChange->innertext);
-$sekTime = $html->find('div.table-responsive table tbody tr td',60);
+$sekTime = $html->find('div.table-responsive table tbody tr td',59);
 
-$cadBuying = $html->find('div.table-responsive table tbody tr td',52);
-$cadSelling = $html->find('div.table-responsive table tbody tr td',53);
-$cadChange = $html->find('div.table-responsive table tbody tr td',54);
+$cadBuying = $html->find('div.table-responsive table tbody tr td',51);
+$cadSelling = $html->find('div.table-responsive table tbody tr td',52);
+$cadChange = $html->find('div.table-responsive table tbody tr td',53);
 $cadChange = str_replace(',', '.', $cadChange->innertext);
-$cadTime = $html->find('div.table-responsive table tbody tr td',55);
+$cadTime = $html->find('div.table-responsive table tbody tr td',54);
 
-$ausBuying = $html->find('div.table-responsive table tbody tr td',47);
-$ausSelling = $html->find('div.table-responsive table tbody tr td',48);
-$ausChange = $html->find('div.table-responsive table tbody tr td',49);
+$ausBuying = $html->find('div.table-responsive table tbody tr td',46);
+$ausSelling = $html->find('div.table-responsive table tbody tr td',47);
+$ausChange = $html->find('div.table-responsive table tbody tr td',48);
 $ausChange = str_replace(',', '.', $ausChange->innertext);
-$ausTime = $html->find('div.table-responsive table tbody tr td',50);
+$ausTime = $html->find('div.table-responsive table tbody tr td',49);
 
-$jpyBuying = $html->find('div.table-responsive table tbody tr td',27);
-$jpySelling = $html->find('div.table-responsive table tbody tr td',28);
-$jpyChange = $html->find('div.table-responsive table tbody tr td',29);
+$jpyBuying = $html->find('div.table-responsive table tbody tr td',26);
+$jpySelling = $html->find('div.table-responsive table tbody tr td',27);
+$jpyChange = $html->find('div.table-responsive table tbody tr td',28);
 $jpyChange = str_replace(',', '.', $jpyChange->innertext);
-$jpyTime = $html->find('div.table-responsive table tbody tr td',30);
+$jpyTime = $html->find('div.table-responsive table tbody tr td',29);
 
-$sarBuying = $html->find('div.table-responsive table tbody tr td',32);
-$sarSelling = $html->find('div.table-responsive table tbody tr td',33);
-$sarChange = $html->find('div.table-responsive table tbody tr td',34);
+$sarBuying = $html->find('div.table-responsive table tbody tr td',31);
+$sarSelling = $html->find('div.table-responsive table tbody tr td',32);
+$sarChange = $html->find('div.table-responsive table tbody tr td',33);
 $sarChange = str_replace(',', '.', $sarChange->innertext);
-$sarTime = $html->find('div.table-responsive table tbody tr td',35);
+$sarTime = $html->find('div.table-responsive table tbody tr td',34);
 
-$dkkBuying = $html->find('div.table-responsive table tbody tr td',42);
-$dkkSelling = $html->find('div.table-responsive table tbody tr td',43);
-$dkkChange = $html->find('div.table-responsive table tbody tr td',44);
+$dkkBuying = $html->find('div.table-responsive table tbody tr td',41);
+$dkkSelling = $html->find('div.table-responsive table tbody tr td',42);
+$dkkChange = $html->find('div.table-responsive table tbody tr td',43);
 $dkkChange = str_replace(',', '.', $dkkChange->innertext);
-$dkkTime = $html->find('div.table-responsive table tbody tr td',45);
+$dkkTime = $html->find('div.table-responsive table tbody tr td',44);
 
-$nokBuying = $html->find('div.table-responsive table tbody tr td',37);
-$nokSelling = $html->find('div.table-responsive table tbody tr td',38);
-$nokChange = $html->find('div.table-responsive table tbody tr td',39);
+$nokBuying = $html->find('div.table-responsive table tbody tr td',36);
+$nokSelling = $html->find('div.table-responsive table tbody tr td',37);
+$nokChange = $html->find('div.table-responsive table tbody tr td',38);
 $nokChange = str_replace(',', '.', $nokChange->innertext);
-$nokTime = $html->find('div.table-responsive table tbody tr td',40);
+$nokTime = $html->find('div.table-responsive table tbody tr td',39);
 
-$chfBuying = $html->find('div.table-responsive table tbody tr td',22);
-$chfSelling = $html->find('div.table-responsive table tbody tr td',23);
-$chfChange = $html->find('div.table-responsive table tbody tr td',24);
+$chfBuying = $html->find('div.table-responsive table tbody tr td',21);
+$chfSelling = $html->find('div.table-responsive table tbody tr td',22);
+$chfChange = $html->find('div.table-responsive table tbody tr td',23);
 $chfChange = str_replace(',', '.', $chfChange->innertext);
-$chfTime = $html->find('div.table-responsive table tbody tr td',25);
+$chfTime = $html->find('div.table-responsive table tbody tr td',24);
 
 $usdFlag = $html->find('div.table-responsive img',0);
 $eurFlag = $html->find('div.table-responsive img',1);
